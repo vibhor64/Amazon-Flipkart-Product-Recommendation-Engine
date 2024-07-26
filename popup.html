@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=5.0">
+    <title>Product Recommendation Engine</title>
+    <link rel="icon" href="src/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="app.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class='super-div'>
+
+        <div class="gradient-line"></div>
+        <div class="container">
+            <div class="header-text" style="user-select: none;">
+                Product <br>
+                Recommendation <br>
+                Engine
+            </div>
+
+            <div class="flex-container">
+                <img src="src/github.png" alt="" class="logo-img" id="github" style="filter: invert(100%)">
+                <a href="https://www.amazon.in/" target="_blank"><img src="src/amazon.png" alt="" class="logo-img"></a>
+                <a href="https://www.flipkart.com/" target="_blank"><img src="src/flipkart.png" alt="" class="logo-img"></a>
+            </div>
+
+            <div id="open-amazon" style="display: none;" class="text-container"
+                style="max-width: 480px; font-weight: 600; user-select:none;">
+                Open product page for Amazon or Flipkart to get started!
+            </div>
+
+            <div id="loading" style="display: none;" class="lds-ellipsis">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <!-- <pre id="backend-response" style="display: none;"></pre> -->
+            <!-- <div id="backend-response" style="display: none; text-align: start; max-width: 480px; margin-left: 1rem;font-size: 16px;"></div> -->
+            <div id="backend-response" style="text-align: start; max-width: 480px; margin-left: 1rem;font-size: 16px;">
+            </div>
+
+            <div id="footer" style="display: none;position: relative; bottom: 10px; margin-top: 10px;">Made with ❤️ by <b>Vibhor Sharma</b></div>
+
+        </div>
+    </div>
+    <script type="module" src="popup.js"></script>
+</body>
+
+</html>
