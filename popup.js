@@ -139,14 +139,14 @@ async function getPageHTML() {
 
   // Send HTML to backend
   try {
-    const response = await fetch('http://127.0.0.1:8000/fetchAmazon', {
+    const response = await fetch('https://render-fastapi.vercel.app/fetchAmazon', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({ prompt: LLMprompt })
     });
-
+  
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }

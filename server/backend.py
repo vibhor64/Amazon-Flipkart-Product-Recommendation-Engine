@@ -23,7 +23,7 @@ class StringInput(BaseModel):
     prompt: str
 
 @app.post("/fetchAmazon")
-async def fetchAmazon(input: StringInput):
+async def fetch_amazon(input: StringInput):
     LLMOut = model.generate_content(input.prompt)
     print("LLM OUTPUT: ", LLMOut.text)
     res=markdown.markdown(LLMOut.text, extensions=['markdown.extensions.tables'])
