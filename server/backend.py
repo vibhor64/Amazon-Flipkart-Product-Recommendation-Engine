@@ -15,7 +15,7 @@ app.add_middleware(
     allow_headers=["*"],  # Allows all headers
 )
 
-GOOGLE_API_KEY='AIzaSyDbQus67GYsqO6k10dlif8wwoGgdIw2X54'
+GOOGLE_API_KEY=''
 genai.configure(api_key=GOOGLE_API_KEY)
 model = genai.GenerativeModel('gemini-pro')
 
